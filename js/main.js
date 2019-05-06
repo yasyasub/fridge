@@ -1,52 +1,25 @@
-/** 
- * ===================================================================
- * main js
- *
- * ------------------------------------------------------------------- 
- */ 
-
 (function($) {
 
 	"use strict";
-
-	/*---------------------------------------------------- */
-	/* Preloader
-	------------------------------------------------------ */ 
    $(window).load(function() {
-
-      // will first fade out the loading animation 
     	$("#loader").fadeOut("slow", function(){
-
-        // will fade out the whole DIV that covers the website.
         $("#preloader").delay(300).fadeOut("slow");
-
-      });       
-
+      });
   	})
-
-
-	/*----------------------------------------------------*/
-	/*	Sticky Navigation
-	------------------------------------------------------*/
    $(window).on('scroll', function() {
 
 		var y = $(window).scrollTop(),
 		    topBar = $('header');
-     
+
 	   if (y > 1) {
 	      topBar.addClass('sticky');
 	   }
       else {
          topBar.removeClass('sticky');
       }
-    
-	});
-	
 
-	/*-----------------------------------------------------*/
-  	/* Mobile Menu
-   ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
+	});
+	var toggleButton = $('.menu-toggle'),
        nav = $('.main-navigation');
 
    toggleButton.on('click', function(event){
@@ -63,20 +36,16 @@
     	else nav.removeClass('mobile');
   	});
 
-  	$('#main-nav-wrap li a').on("click", function() {   
+  	$('#main-nav-wrap li a').on("click", function() {
 
-   	if (nav.hasClass('mobile')) {   		
-   		toggleButton.toggleClass('is-clicked'); 
-   		nav.fadeOut();   		
-   	}     
+   	if (nav.hasClass('mobile')) {
+   		toggleButton.toggleClass('is-clicked');
+   		nav.fadeOut();
+   	}
   	});
 
-   /*----------------------------------------------------*/
-  	/* Highlight the current section in the navigation bar
-  	------------------------------------------------------*/
-
 	var sections = $("section"),
-	navigation_links = $("#main-nav-wrap li a");	
+	navigation_links = $("#main-nav-wrap li a");
 
 	sections.waypoint( {
 
@@ -88,21 +57,16 @@
 
 			if (direction === "up") active_section = active_section.prev();
 
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');
 
          navigation_links.parent().removeClass("current");
 			active_link.parent().addClass("current");
 
-		}, 
+		},
 
 		offset: '25%'
 
 	});
-
-
-	/*----------------------------------------------------*/
-  	/* Flexslider
-  	/*----------------------------------------------------*/
   	$(window).load(function() {
 
 	   $('#testimonial-slider').flexslider({
@@ -120,12 +84,8 @@
 
    });
 
-
-	/*----------------------------------------------------*/
-  	/* Smooth Scrolling
-  	------------------------------------------------------*/
   	$('.smoothscroll').on('click', function (e) {
-	 	
+
 	 	e.preventDefault();
 
    	var target = this.hash,
@@ -137,21 +97,10 @@
       	window.location.hash = target;
       });
 
-  	});  
-  
-
-   /*----------------------------------------------------*/
-	/*  Placeholder Plugin Settings
-	------------------------------------------------------*/ 
-
-	$('input, textarea, select').placeholder()  
+  	});
 
 
-	/*---------------------------------------------------- */
-   /* ajaxchimp
-	------------------------------------------------------ */
-
-	// Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+	$('input, textarea, select').placeholder()
 	var mailChimpURL = 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
 
 	$('#mc-form').ajaxChimp({
@@ -160,26 +109,13 @@
 	   url: mailChimpURL
 
 	});
-
-
-	/*---------------------------------------------------- */
-	/* FitVids
-	------------------------------------------------------ */ 
   	$(".fluid-video-wrapper").fitVids();
-
-
- 	/*---------------------------------------------------- */
-	/*	Modal Popup
-	------------------------------------------------------ */
-
     $('.video-link a').magnificPopup({
-
        type:'inline',
        fixedContentPos: false,
        removalDelay: 200,
        showCloseBtn: false,
-       mainClass: 'mfp-fade'       
-
+       mainClass: 'mfp-fade'
     });
 
     $(document).on('click', '.close-popup', function (e) {
@@ -187,16 +123,11 @@
     		$.magnificPopup.close();
     });
 
+	var pxShow = 300;
+	var fadeInTime = 400;
+	var fadeOutTime = 400;
+	var scrollSpeed = 300;
 
- 	/*----------------------------------------------------- */
-  	/* Back to top
-   ------------------------------------------------------- */ 
-	var pxShow = 300; // height on which the button will show
-	var fadeInTime = 400; // how slow/fast you want the button to show
-	var fadeOutTime = 400; // how slow/fast you want the button to hide
-	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
-
-   // Show or hide the sticky footer button
 	jQuery(window).scroll(function() {
 
 		if (!( $("#header-search").hasClass('is-visible'))) {
@@ -207,8 +138,8 @@
 				jQuery("#go-top").fadeOut(fadeOutTime);
 			}
 
-		}		
+		}
 
-	});		
+	});
 
 })(jQuery);
