@@ -1,28 +1,3 @@
-/**
- * =================================================================== 
- *
- *  Lhander 1.0 | Vendor/Third Party CSS 
- *  url: styleshout.com
- *  01-11-2016
- *
- * =================================================================== 
- */
-
-
-/**
- * jQuery FlexSlider v2.5.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- * 
- * ===================================================================
- */
-
-/* reset */
 .flex-container a:hover,
 .flex-slider a:hover,
 .flex-container a:focus,
@@ -43,7 +18,6 @@
   text-transform: capitalize;
 }
 
-/* base styles */
 .flexslider {
   margin: 0;
   padding: 0;
@@ -80,12 +54,6 @@ html[xmlns] .flexslider .slides {
   display: block;
 }
 
-
-/**
- * Magnific Popup CSS 
- * ===================================================================
- */
- 
 .mfp-bg {
   top: 0;
   left: 0;
@@ -403,7 +371,6 @@ button::-moz-focus-inner {
   background: #000;
 }
 
-/* Main image in popup */
 img.mfp-img {
   width: auto;
   max-width: 100%;
@@ -417,7 +384,6 @@ img.mfp-img {
   margin: 0 auto;
 }
 
-/* The shadow behind the image */
 .mfp-figure {
   line-height: 0;
 }
@@ -474,9 +440,7 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  /**
-       * Remove all paddings around the image on small screen
-       */
+
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -575,5 +539,3 @@ img.mfp-img {
   right: 0;
   padding-top: 0;
 }
-
-/*# sourceMappingURL=vendor.css.map */
