@@ -52,6 +52,8 @@ h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "raleway-bold", sans-serif;
 	color: #252525;
 	font-style: normal;
+	font-size: medium;
+	font-weight: bolder;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
 }
@@ -1419,6 +1421,11 @@ a.menu-toggle {
 }
 .features-content {
 	max-width: 1200px;
+}
+.features-content p {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: x-large;
+	font-weight: bold;
 }
 .features-list {
 	margin-top: 1.2rem;

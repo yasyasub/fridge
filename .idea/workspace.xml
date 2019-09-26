@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b426aa10-328b-425b-9daa-82d8fb686e1e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,6 +20,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,7 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1557149923408</updated>
       <workItem from="1557149927473" duration="21000" />
-      <workItem from="1569507911952" duration="605000" />
+      <workItem from="1569507911952" duration="2600000" />
     </task>
     <servers />
   </component>
