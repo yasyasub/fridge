@@ -474,11 +474,6 @@ textarea {
 	width: 50%;
 }
 
-/**
- * Clearing for block grid columns. Allow columns with
- * different heights to align properly.
- */
-
 .block-1-6 .bgrid:nth-child(6n+1),
 .block-1-4 .bgrid:nth-child(4n+1),
 .block-1-3 .bgrid:nth-child(3n+1),
@@ -486,10 +481,6 @@ textarea {
 	clear: both;
 }
 
-/**
- * small screens
- * ---------------------------------------------------------------
- */
 @media screen and (max-width:1024px) {
 	.block-s-1-6 .bgrid {
 		width: 16.66667%;
