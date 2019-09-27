@@ -31,16 +31,22 @@
 </head>
 <body id="top">
 
-<div class="overlay js-overlay-campaign">
-    <div class="popup js-popup-campaign">
+<script type="text/javascript">
+    var delay_popup = 5000;
+    setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+</script>
 
-            <h1>Вызовите мастера прямо сейчас</h1>
-            <div class="close-popup js-close-campaign"></div>
-
+<div id="bg_popup">
+    <div id="popup">
+        <h1>Вызовите мастера прямо сейчас</h1>
+        <i class="fas fa-phone"><a href="tel:+380957241504"> +380957241504</a></i><br>
+        <i class="fas fa-phone"><a href="tel:+380675300435"> +380675300435</a></i><br>
+        <i class="fas fa-phone"><a href="tel:+380936535048"> +380936535048</a></i><br>
+        <a class="close" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">X</a>
     </div>
 </div>
-	<!-- header
-   ================================================== -->
+<!-- header
+================================================== -->
    <header>
    	<div class="row">
    		<div class="logo">
@@ -71,36 +77,11 @@
              <h5>Бытовых и промышленных</h5>
              <h5>Харьков и пригород</h5>
              <a class="button stroke smoothscroll" href="#process" title="">Связаться</a>
-               <!-- TODO: "ебал"-->
-               <!--<button class="js-button-campaign"></button>-->
            </div>
          </div>
        </div>
      </section>
 
-<!--TODO: "ёбаная неработающая кнопка сука"-->
-
-<!--<script type="text/javascript">-->
-<!--    // открыть по кнопке-->
-<!--    $('.js-button-campaign').click(function() {-->
-<!--        $('.js-overlay-campaign').fadeIn();-->
-<!--        $('.js-overlay-campaign').addClass('disabled');-->
-<!--    });-->
-
-<!--    // закрыть на крестик-->
-<!--    $('.js-close-campaign').click(function() {-->
-<!--        $('.js-overlay-campaign').fadeOut();-->
-
-<!--    });-->
-
-<!--    // закрыть по клику вне окна-->
-<!--    $(document).mouseup(function (e) {-->
-<!--        var popup = $('.js-popup-campaign');-->
-<!--        if (e.target!==popup[0]&&popup.has(e.target).length === 0){-->
-<!--            $('.js-overlay-campaign').fadeOut();-->
-<!--        }-->
-<!--    });-->
-<!--</script>-->
    <!-- Process Section
    ================================================== -->
    <section id="process">
