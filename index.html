@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
 
    <!--- basic page needs
    ================================================== -->
-   <meta charset="utf-8">
-	<title>Gold Shina Service</title>
-	<meta name="description" content="GSS - gold shina service. Шинній сервис Харьков">
-	<meta name="author" content="yasyasub">
+  <meta charset="utf-8">
+  <title>Ремонт холодильников</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
    <!-- mobile specific metas
    ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.min.css">
-   <link rel="stylesheet" href="css/main.css">     
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
    <!-- script
    ================================================== -->
@@ -27,860 +26,302 @@
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
+<body id="top">
 
-<body>
+<script type="text/javascript">
+    var delay_popup = 5000;
+    setTimeout("document.getElementById('bg_popup').style.display='block'", delay_popup);
+</script>
 
-	<!-- header
-   ================================================== -->
-   <header id="main-header">
-
+<div id="bg_popup">
+    <div id="popup">
+        <h1>Вызовите мастера прямо сейчас</h1>
+        <i class="fas fa-phone"><a class="popup-link_visited" href="tel:+380957241504">   Vodafone</a></i><br>
+        <i class="fas fa-phone"><a class="popup-link_visited" href="tel:+380675300435">     Kyivstar</a></i><br>
+        <a class="close" href="#" title="Закрыть" onclick="document.getElementById('bg_popup').style.display='none'; return false;">X</a>
+    </div>
+</div>
+<!-- header
+================================================== -->
+   <header>
    	<div class="row">
-
-	      <div class="logo">
-	         <a href="index.html">Kreo</a>
+   		<div class="logo">
+	         <a href="index.html">Ремонт холодильников</a>
 	      </div>
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Главная</a></li>
+					<li><a class="smoothscroll"  href="#process" title="">Вызов мастера</a></li>
+                    <li><a class="smoothscroll"  href="#breakdowns" title="">Распространенные поломки</a></li>
+					<li><a class="smoothscroll"  href="#features" title="">Преимущества</a></li>
+					<li><a class="smoothscroll"  href="#pricing" title="">Цены</a></li>
+					<li><a class="smoothscroll"  href="#faq" title="">Вопросы</a></li>
+				</ul>
+			</nav>
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+   	</div>
+   </header>
 
-	      <nav id="nav-wrap">         
-	         
-	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
-	         	<span class="menu-icon">Menu</span>
-	         </a>
-         	<a class="mobile-btn" href="#" title="Hide navigation">
-         		<span class="menu-icon">Menu</span>
-         	</a>            
-
-	         <ul id="nav" class="nav">
-	            <li><a class="smoothscroll" href="#hero">Главная.</a></li>
-		         <li class="current"><a class="smoothscroll" href="#portfolio">Наши особенности.</a></li>
-	            <li><a class="smoothscroll" href="#services">Наши услуги.</a></li>
-				 <li><a class="smoothscroll" href="#price">Прайсинг.</a></li>
-	            <li><a class="smoothscroll" href="#about">О нас.</a></li>
-				 <li><a class="smoothscroll" href="#contact">Контакты.</a></li>
-	         </ul> <!-- end #nav -->
-	      </nav> <!-- end #nav-wrap -->
-	   </div>
-
-   </header> <!-- end header -->
-
-
-   <!-- homepage hero
+	<!-- intro section
    ================================================== -->
-   <section id="hero">	
-   	  
-		<div class="row hero-content">
-
-			<div class="twelve columns hero-container">
-
-			   <!-- hero-slider start-->
-			   <div id="hero-slider" class="flexslider">
-
-				   <ul class="slides">
-
-					   <!-- slide -->
-					   <li>
-
-						   <div style="background-color: #1c212a; padding: 5%; opacity: 0.7; filter: alpha(Opacity=70);" class="flex-caption">
-							   <div style="opacity: 1">
-								<h1 class="">Добро пожаловать на <a class="smoothscrool">Gold Shina Service</a>.
-								</h1>
-							   <h3>
-								   Грузовой, легковой шинный сервис<br>
-								   <a href="https://goo.gl/maps/gK1F27dbGHqScTJr5">город Харьков, Клочковская 370</a>  </h3>
-						   </div>
-						   </div>
-					   </li>
-<!--					   <li>-->
-<!--							<div class="flex-caption">-->
-<!--								<h1 class="">У нас вы можете произвести сезонную "переобувку", приобрести новые покрышки либо отремонтировать свои.-->
-<!--								</h1>-->
-<!--							</div>-->
-<!--					   </li>-->
-
-<!--					   &lt;!&ndash; slide &ndash;&gt;-->
-<!--					   <li>-->
-<!--						   <div class="flex-caption">-->
-<!--								<h1 class="">Приобрести диски либо же произвести ремонт своих</h1>-->
-<!--						   </div>-->
-<!--					   </li>-->
-
-<!--					   &lt;!&ndash; slide &ndash;&gt;-->
-<!--					   <li>-->
-<!--						   <div class="flex-caption">-->
-<!--							   <h1 class="">Произвести развал-схождение на любом транспорте</h1>-->
-<!--						   </div>-->
-<!--					   </li>-->
-
-				   </ul>
-
-			   </div> <!-- end hero-slider -->				   
-
-	      </div> <!-- end twelve columns-->
-
-		</div> <!-- end row -->	
-
-		<div id="more">
-		      <a class="smoothscroll" href="#portfolio">Продолжим?<i class="fa fa-angle-down"></i></a>
-		</div> 	
-
-   </section> <!-- end homepage hero -->
-
-
-   <!-- portfolio
-   ================================================== -->
-   <section id="portfolio">
-      <div class="row section-head">
-      	<div class="twelve columns">
-      		<h1>Наши особенности<span>.</span></h1>
-	         <hr />
-	         <p>В Харькове вы можете найти большое количество шиномонтажных сервисов. Но, далеко не каждый сервис сможет вам предоставить те условия обслуживания, которые придоставляем мы. Чистые помещения, комфортная зона ожидания с приятными условиями, профессионализм мастеров - все это <span style="color: yellow"> Gold Shina Service</span>
-	         </p>
-
-	      </div>
-
-      </div> <!-- end section-head -->
-
-      <div class="row items">
-
-         <!-- portfolio-wrapper -->
-         <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-01">
-	                  <img src="images/portfolio/underwater.jpg" alt="Underwater">
-                     <div class="overlay"></div>                       
-                     <div class="portfolio-item-meta">
-     					      <h5>Underwater</h5>
-                        <p>Videography</p>
-     					   </div> 
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-        		</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-02">
-                     <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Hotel Sign</h5>
-                           <p>Branding</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-03">
-                     <img src="images/portfolio/beetle.jpg" alt="Beetle">
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Beetle</h5>
-                           <p>Webdesign</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-04">
-                     <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Banjo Player</h5>
-                           <p>Photography</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-05">
-                   <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Lighthouse</h5>
-                           <p>Web Development</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-06">
-                     <img src="images/portfolio/girl.jpg" alt="Girl Stuff">
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Girl Stuff</h5>
-                           <p>Photography</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-07">                        
-                     <img src="images/portfolio/coffee.jpg" alt="Coffee Cup">                       
-                     <div class="overlay">
-                      <div class="portfolio-item-meta">
-          					   <h5>Coffee Cup</h5>
-                           <p>Branding</p>
-          					</div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>
-                  </a>
-               </div>
-         	</div> <!-- item end -->
-
-            <div class="bgrid folio-item">
-               <div class="item-wrap">
-                  <a href="#modal-08">
-                     <img src="images/portfolio/judah.jpg" alt="Judah">
-                     <div class="overlay">
-                      	<div class="portfolio-item-meta">
-        					      <h5>Judah</h5>
-                           <p>Webdesign</p>
-        					   </div>
-                     </div>
-                     <div class="link-icon"><i class="fa fa-plus"></i></div>                     
-                  </a>
-               </div>
-       		</div>  <!-- item end -->
-
-         </div> <!-- end portfolio-wrapper -->
-         
-
-         <!-- modal popup
-	   	========================================================= -->
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/underwater.jpg" alt="Underwater" />
-	      	</div>
-
-		      <div class="description-box">
-			      <h4>Underwater</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories">Videography</span>
-		      </div>
-
-            <div class="link-box group">
-            	<a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 end -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-hotel.jpg" alt="Hotel Sign" />
-	      	</div>
-
-		      <div class="description-box">
-			      <h4>Hotel Sign</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories">Branding, Web Development</span>
-		      </div>
-
-            <div class="link-box">            	
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-02 end -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-	      	</div>
-
-		      <div class="description-box">
-			      <h4>Beetle</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories">Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 end -->
-
-			<div id="modal-04" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-banjo-player.jpg" alt="" />
-	      	</div>
-
-		      <div class="description-box">
-			      <h4>Banjo Player</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories">Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 end -->
-
-	      <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-	      	<div class="media">
-	      		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-	      	</div>      	
-
-		      <div class="description-box">
-			      <h4>Lighthouse</h4>		      
-
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-			      <div class="categories">Web Development</div>
-               
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>		      
-
-	      </div><!-- modal-05 end -->
-
-	      <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-girl.jpg" alt="" />
-	      	</div>	
-
-		      <div class="description-box">
-			      <h4>Girl Stuff</h4>			      
-
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-			      <div class="categories">Photography</div>
-               
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 end -->
-
-	      <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-coffee.jpg" alt="" />
-	      	</div>	
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>			      
-
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-			      <div class="categories">Branding</div>
-               
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 end -->
-
-	      <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <div class="media">
-	      		<img src="images/portfolio/modals/m-judah.jpg" alt="" />
-	      	</div>	
-
-		      <div class="description-box">
-			      <h4>Judah</h4>			      
-
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-			      <div class="categories">Webdesign</div>
-               
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net">Details</a>
-		         <a href="#" class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-08 end -->
-
-      </div>  <!-- end row -->
-
-   </section> <!-- end portfolio -->
-
-
-   <!-- Services Section
-   ================================================== -->
-   <section id="services">
-
-   	<div class="row section-head">
-
-      	<div class="twelve columns">
-
-      		<h1>Наши услуги<span>.</span></h1>
-
-	         <hr />      	         
-
-	         <p><span style="color: yellow">Gold Shina Service</span> предоставляет большой спектр услуг - от сезонной "переобувки" и до сложных ремонтов покрышек и дисков. Как для легковых, так и для грузовых транспортных средств.
-	         </p>
-
-	      </div>
-
-      </div> <!-- end section-head -->
-
-      <div class="row mobile-no-padding">      	
-
-	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
-
-	      	<div class="bgrid">	               
-
-	            <h3>ремонт шин.</h3>
-
-	            <div class="service-content">	                  
-		            <p>Ремонт боковых порезов шин – трудоемкий процесс. Восстановить первоначальную структуру самостоятельно практически невозможно. Вначале следует внимательно осмотреть всю шину и локализовать поврежденный участок, изучить глубину и степень пореза. И только потом приступить непосредственно к устранению дефекта.
-
-						Качественно, быстро и надежно произвести такую работу сможет только специалист, используя довольно сложное оборудование.</p>
-	         	</div>  
-
-				</div> <!-- end bgrid -->
-
-				<div class="bgrid">	              
-
-	            <h3>покатка литых дисков.</h3>
-
-	            <div class="service-content">	                  
-		            <p>Современные технологии в области автомобильного ремонта развиваются постоянно, а инновационные методы позволяют существенно сокращать время и финансы на обслуживание автомобиля. Выражение прокатка дисков можно считать устаревшим – в услугу входит целый комплекс различных этапов ремонта колес.
-						</p>
-	            </div>	              
-
-			   </div> <!-- end bgrid -->
-
-			   <div class="bgrid">	              
-
-	            <h3>сезонное хранение шин.</h3>
-
-	            <div class="service-content">		                  
-		            <p>Наша компания предоставляет услуги по сезонному хранению шин. Снятые шины тщательно осматриваются на предмет дефектов и повреждений, замеряется глубина протектора, описывается маркировка и дата производства. После этого шины помешаются на сухой закрытый склад, защищенный от попадания прямых солнечных лучей. Мы храним шины в вертикальном положении, используя специальные стенды.
-
-					</p>
-	            </div> 	               
-
-			   </div> <!-- end bgrid -->
-
-				<div class="bgrid">	              
-	                  
-	            <h3>шинный склад-магазин.</h3>
-
-	            <div class="service-content">	                  
-		            <p>Мы поможем подобрать типоразмер, определиться с выбором модели и заказать автошины. Трудно не согласиться, что выбор резины для автолюбителя является таким же важным шагом, как и выбор обуви для человека. Прежде чем отправляться в дорогу, нужно убедиться, что на диске стоит качественная резина, которая после первого же дня не подведет, а обеспечит водителю безопасность в любое время дня и ночи
-
-					</p>
-	            </div>                
-
-				</div> <!-- end bgrid -->
-
-			   <div class="bgrid">
-
-	            <h3>балансировка.</h3>
-
-	            <div class="service-content">	                  
-		            <p>Если во время езды ощущается вибрация в руле или кузове – пришло время заехать на шиномонтаж и проверить балансировку колес автомобиля. Незначительная вибрация начинается с подвески, и если постоянно откладывать проверку, закончиться это может разбитым подшипником или повреждением сайлентблока. В любом случае ремонт или замена подвески обойдется намного дороже, чем балансировка колес.
-						</p>
-	            </div>	               
-
-			   </div> <!-- end bgrid -->
-
-			   <div class="bgrid">	               
-
-	            <h3>Нарезка глубины протектора.</h3>
-
-	            <div class="service-content">
-		            <p>Нарезке можно подвергать как новые, так и восстановленные грузовые шины. Главное, чтобы на боковине была соответствующая маркировка «U» или «Regroovable», информирующая о том, что нарезка данной шины разрешена. Часто «народные умельцы» нарезают шины вовсе не предназначенные для этой процедуры. Не стоит идти на рискованные эксперименты, подвергая нарезке обычные шины.
-	        			</p> 
-	            </div>	               
-
-			   </div> <!-- end bgrid -->
-
-	      </div> <!-- end service-list -->
-
-      </div> <!-- end row -->
-
-   </section> <!-- end services -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-   	<div class="row section-head">
-
-      	<div class="twelve columns">
-
-      		<h1>Who Are We<span>.</span></h1>
-
-	         <hr />     	    
-
-	         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-	         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-	         voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-	         </p>
-
-	      </div> <!-- end section-head -->
-
-      </div>
-
-      <div class="row mobile-no-padding">       	
-
-      	<div class="process bgrid-half tab-bgrid-whole group">
-
-      		<div class="bgrid">
-
-			      <h3>Our Process.</h3>	
-
-			      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-			      </p>
-
-		   	</div>
-
-      		<div class="bgrid">
-
-			     	<h3>Our Approach.</h3>
-
-			     	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-			   	</p>	
-
-		      </div> 
-
-		      <div class="bgrid">
-
-			     	<h3>Our Goal.</h3>	
-
-			     	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-			      </p>
-
-		      </div>
-
-		      <div class="bgrid">
-
-			      <h3>Our Mission.</h3>
-
-			      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-			      </p>	
-
-		      </div>
-
-      	</div> <!-- end process -->
-
-		  <div class="row pricing-content" id="price">
-			  <div class="pricing-tables block-1-4 group">
-				  <div class="bgrid">
-					  <div class="price-block">
-						  <div class="top-part" >
-							  <h3 class="plan-title">lorem</h3>
-							  <p class="plan-price">от 1000<sup>₴</sup></p>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="bgrid">
-					  <div class="price-block">
-						  <div class="top-part" >
-							  <h3 class="plan-title">lorem</h3>
-							  <p class="plan-price">от 1000<sup>₴</sup></p>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="bgrid">
-					  <div class="price-block">
-						  <div class="top-part" >
-							  <h3 class="plan-title">lorem</h3>
-							  <p class="plan-price">от 1000<sup>₴</sup></p>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="bgrid">
-					  <div class="price-block">
-						  <div class="top-part" >
-							  <h3 class="plan-title">lorem</h3>
-							  <p class="plan-price">от 1000<sup>₴</sup></p>
-						  </div>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-     	</div> <!-- end row -->
-
-
-<!--      <div class="row team section-head">-->
-
-<!--   		<div class="twelve columns">-->
-
-<!--	         <h1>Meet Our Team<span>.</span></h1>-->
-
-<!--	         <hr />	         -->
-
-<!--	      </div>-->
-
-<!--      </div> &lt;!&ndash; end section-head &ndash;&gt;-->
-
-<!--      <div class="row">-->
-
-<!--         <div id="team-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half mob-bgrid-whole group">-->
-
-<!--            <div class="bgrid member">-->
-
-<!--					<div class="member-pic">-->
-<!--						<img src="images/team/member01-k.jpg" alt=""/>-->
-<!--                 	<div class="mask"></div>       	-->
-<!--               </div>-->
-<!--               <div class="member-name">-->
-<!--                  <h3>Naruto Uzumaki</h3>-->
-<!--                  <span>Creative Director</span>-->
-<!--               </div>-->
-
-<!--               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,-->
-<!--               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>-->
-
-<!--               <ul class="member-social">-->
-<!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-<!--               </ul>-->
-
-<!--            </div> &lt;!&ndash; end member &ndash;&gt;-->
-
-<!--            <div class="bgrid member">-->
-<!--								-->
-<!--					<div class="member-pic">-->
-<!--                  <img src="images/team/member03-k.jpg" alt=""/>-->
-<!--               	<div class="mask"></div>  -->
-<!--               </div>-->
-<!--               <div class="member-name">-->
-<!--                  <h3>Sasuke Uchiha</h3>-->
-<!--                  <span>Lead Designer</span>-->
-<!--               </div>-->
-
-<!--               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,-->
-<!--               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>-->
-
-<!--               <ul class="member-social">-->
-<!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-<!--               </ul>-->
-
-<!--            </div> &lt;!&ndash; end member &ndash;&gt;-->
-
-<!--            <div class="bgrid member">-->
-<!--								-->
-<!--					<div class="member-pic">-->
-<!--						<img src="images/team/member04-k.jpg" alt=""/>-->
-<!--                 	<div class="mask"></div>                          	-->
-<!--               </div>-->
-<!--               <div class="member-name">-->
-<!--                  <h3>Shikamaru Nara</h3>-->
-<!--                  <span>Designer</span>-->
-<!--               </div>-->
-
-<!--               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,-->
-<!--               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>-->
-
-<!--               <ul class="member-social">-->
-<!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-<!--               </ul>-->
-
-<!--     			</div> &lt;!&ndash; end member &ndash;&gt;-->
-
-<!--            <div class="bgrid member">-->
-<!--								-->
-<!--					<div class="member-pic">-->
-<!--                 	<img src="images/team/member05-k.jpg" alt=""/>-->
-<!--                 	<div class="mask"></div>  -->
-<!--               </div>-->
-<!--               <div class="member-name">-->
-<!--                  <h3>Sakura Haruno</h3>-->
-<!--                  <span>Designer</span>-->
-<!--               </div>-->
-
-<!--               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,-->
-<!--               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>-->
-
-<!--               <ul class="member-social">-->
-<!--                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
-<!--                  <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-<!--               </ul>-->
-
-<!--            </div> &lt;!&ndash; end member &ndash;&gt;-->
-
-<!--         </div> &lt;!&ndash; end team-wrapper &ndash;&gt;-->
-
-<!--      </div> &lt;!&ndash; end row &ndash;&gt;-->
-
-<!--      <div id="call-to-action">	       -->
-
-<!--		   <div class="row section-ads">-->
-
-<!--		      <div class="twelve columns">		         		-->
-
-<!--			      <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost<span>.</span></a></h2>-->
-
-<!--			      <p>-->
-<!--			      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.-->
-<!--					Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. -->
-<!--					&lt;!&ndash; Simply type	the promocode in the box labeled “Promo Code” when placing your order. &ndash;&gt;					-->
-<!--					</p>-->
-
-<!--					<div class="action">-->
-<!--			         <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" >Sign Up Now</a>-->
-<!--	         	</div>-->
-
-<!--			   </div>-->
-
-<!--		   </div> &lt;!&ndash; end section-ads &ndash;&gt;		         	         -->
-
-<!--	   </div> &lt;!&ndash; end call-to-action &ndash;&gt;	           -->
-
-<!--   </section> &lt;!&ndash; end about &ndash;&gt;  -->
-
-
-     <!-- contact
-   ================================================== -->
-   <section id="contact">
-
-   	<div class="row section-head">
-
-   		<div class="twelve columns">
-
-	         <h1>Get In Touch With Us<span>.</span></h1>
-
-	         <hr />	        
-
-	      </div>
-
-      </div> <!-- end section-head -->
-
-      <div class="row">
-      	
-      	<div id="contact-form" class="six columns tab-whole right">
-
-            <!-- contact-warning -->
-            <div id="message-warning"></div>
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="icon-ok"></i>Your message was sent, thank you!<br />
-      		</div>
-
+   <section id="intro">
+     <div class="shadow-overlay"></div>
+      <div class="intro-content">
+   		   <div class="row">
+           <div class="col-twelve">
+             <h1>Ремонт холодильников</h1>
+             <h5>Бытовых и промышленных</h5>
+             <h5>Харьков и пригород</h5>
+             <a class="button stroke smoothscroll" href="#process" title="">Связаться</a>
+           </div>
          </div>
+       </div>
+     </section>
 
-         <div class="six columns tab-whole left">
+   <!-- Process Section
+   ================================================== -->
+   <section id="process">
+     <div class="row section-intro">
+       <div class="col-twelve with-bottom-line">
+         <h5>Наши контакты</h5>
+         <h1>Нужна наша помощь?</h1>
+       </div>
+       <div class="intro_txt">
+         <p>Разные модели холодильников, как и разные люди, зачастую «болеют» только свойственными им «болезнями».
+        	Помочь Вам и Вашему холодильнику в Харькове и области, произвести квалифицированный ремонт у Вас на дому ,
+        	в удобное для Вас время, по доступной цене и с гарантией могут опытные мастера своего дела.</p>
+      </div>
+      <div class="col-twelve with-bottom-line">
+        <i class="fas fa-phone"><a href="tel:+380957241504"> +380957241504</a></i><br>
+        <i class="fas fa-phone"><a href="tel:+380675300435"> +380675300435</a></i><br>
+        <i class="fas fa-phone"><a href="tel:+380936535048"> +380936535048</a></i><br>
+      </div>
+      <h4>Александр</h4>
+    </div>
+  </section>
 
-            <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+<!-- features Section
+   ================================================== -->
+<section id="features">
+    <div class="row section-intro">
+        <div class="col-twelve with-bottom-line">
+            <h5>Преимущества</h5>
+            <h1>Почему именно мы?</h1>
+            <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+        </div>
+    </div>
+    <div class="row features-content">
+        <div class="features-list block-1-3 block-s-1-2 block-tab-full group">
+            <div class="bgrid feature">
+                <span class="icon"><i class="fas fa-business-time"></i></span>
+                <div class="service-content">
+                    <h3 class="h05">1</h3>
+                    <p>Быстрый и качественный ремонт с гарантией на проделанные рабты</p>
+                </div>
+            </div> <!-- /bgrid -->
+            <div class="bgrid feature">
+                <span class="icon"><i class="fas fa-shipping-fast"></i></span>
+                <div class="service-content">
+                    <h3 class="h05">2</h3>
+                    <p>Бесплатный выезд мастера</p>
+                </div>
+            </div> <!-- bgrid -->
+            <div class="bgrid feature">
+                <span class="icon"><i class="icon-paint-brush"></i></span>
+                <div class="service-content">
+                    <h3 class="h05">3</h3>
+                    <p>Профессиональный мастер с опытом работы более 8 лет</p>
+                </div>
+            </div> <!-- bgrid -->
+        </div> <!-- features-list -->
+    </div> <!-- features-content -->
+</section>
 
-	         <h3 class="address">Come Visit</h3>
+    <!-- possible breakdowns
+       ================================================== -->
+    <section id="breakdowns">
+        <div class="row breakdowns-bg section-intro">
+            <div class="col-twelve with-bottom-line">
+                <br>
+                <h5>Определи вид поломки самостоятельно</h5>
+                <h1>Очевидные поломки и их причины</h1>
+                <p class="lead">Ниже указаны самые распространенные поломки с возможными причинами появления и вариантами дальнейшено ремонта</p>
+            </div>
+        </div>
+        <div class="row faq-content">
+            <div class="q-and-a block-1-2 block-tab-full group">
+                <div class="bgrid">
+                    <h3>Холодильник не включается</h3>
+                    <p>Причин может быть несколько.<br>Самые распространенные: электропроводка или вилка холодильника неисправны, нет напряжения в системе электроснабжения, компрессор или главный модуль не работают.                   </p>
+                </div>
+                <div class="bgrid">
+                    <h3>
+                        Слабо холодит морозильная камера</h3>
+                    <p>Причина кроется в неисправности или в неправильном положении терморегулятора. Если в морозилке соблюдается стандартная низкая температура, а в холодильной камере температура выше оптимальной, скорее всего, произошла утечка фреона. Его нужно просто пополнить/дозаправить.</p>
+                </div>
+                <div class="bgrid">
+                    <h3>Морозильная камера обмерзает</h3>
+                    <p>В этом случае неисправность заключается в плохой работе реле-термостата. Из-за этого же случается появление инея и льда в задней части холодильной камеры. Необходима замена устройства либо его ремонт.</p>
+                </div>
+                <div class="bgrid">
+                    <h3>Холодильник долгое время не отключается</h3>
+                    <p>Большая вероятность того, что произошла утечка фреона. Чтобы не случился, перегрев холодильника, настоятельно рекомендуется отключить его из сети и вызвать нашего мастера как можно быстрее.</p>
+                </div>
+                <div class="bgrid">
+                    <h3>Холодильник отключается сразу после включения</h3>
+                    <p>Проблема заключается в неисправности пускозащитного реле, которое необходимо заменить. Также рассматривается вариант поломки компрессора, но это менее вероятная причина.</p>
+                </div>
+                <div class="bgrid">
+                    <h3>Не работают индикаторы</h3>
+                    <p>Причин данной неисправности может быть несколько. Скорей всего просто перегорели лампочки и необходима замена. Также проблема может скрываться в электрическом модуле холодильника или в модуле управления.</p>
+                </div>
+                <div class="bgrid">
+                    <h3>Из холодильника течёт вода</h3>
+                    <p>Если сливная система засорилась, то первый признак этого – регулярные протекания. Необходимо провести полную диагностику и произвести очистку слива.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
 
-	         <p>
-            1600 Amphitheatre Parkway<br>
-            Mountain View, CA<br>
-            94043 US
-            </p>
 
-            <h3>Contact Numbers:</h3>
-			   <p>Phone: (000) 555 1212<br>
-			   	Mobile: (000) 555 0100<br>
-			     	Fax: (000) 555 0101
-			   </p>
-               	
-         </div>     	
+	<!-- pricing
+   ================================================== -->
 
-      </div> <!-- end row -->     
+   <section id="pricing">
+     <div class="row section-intro">
+       <div class="col-twelve with-bottom-line">
+         <h5>Цены</h5>
+         <h1>Наши расценки</h1>
+         <p>Ниже указаны стартовые цены за определенный вид работ.</p>
+       </div>
+     </div>
+     <div class="row pricing-content">
+       <div class="pricing-tables block-1-4 group">
+         <div class="bgrid">
+           <div class="price-block">
+             <div class="top-part" >
+               <h3 class="plan-title">lorem</h3>
+                 <p class="plan-price">от 1000<sup>₴</sup></p>
+             </div>
+           </div>
+         </div>
+         <div class="bgrid">
+           <div class="price-block">
+             <div class="top-part" >
+               <h3 class="plan-title">lorem</h3>
+                 <p class="plan-price">от 1000<sup>₴</sup></p>
+             </div>
+           </div>
+         </div>
+         <div class="bgrid">
+           <div class="price-block">
+             <div class="top-part" >
+               <h3 class="plan-title">lorem</h3>
+               <p class="plan-price">от 1000<sup>₴</sup></p>
+             </div>
+           </div>
+         </div>
+         <div class="bgrid">
+           <div class="price-block">
+               <div class="top-part" >
+                   <h3 class="plan-title">lorem</h3>
+                   <p class="plan-price">от 1000<sup>₴</sup></p>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
 
-   </section>  <!-- end contact -->
+   <!-- faq
+   ================================================== -->
+   <section id="faq">
+     <div class="row section-intro">
+       <div class="col-twelve with-bottom-line">
+         <h5>ЧЗВ</h5>
+         <h1>Вопросы и ответы</h1>
+         <p class="lead">Ниже указаны часто задаваемые вопросы и ответы на них.
+                         Воможно среди них вы найдете интересующий вас вопрос и не будете просто так заебывать мастера.</p>
+       </div>
+     </div>
+     <div class="row faq-content">
+       <div class="q-and-a block-1-2 block-tab-full group">
+         <div class="bgrid">
+           <h3>Можно ли поменять резину на двери?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+         </div>
+         <div class="bgrid">
+           <h3>Вытек "фреон". Можно ли его залить обратно?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure .</p>
+         </div>
+         <div class="bgrid">
+           <h3>Можно ли поменять резину на двери?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+         </div>
+         <div class="bgrid">
+           <h3>Вытек "фреон". Можно ли его залить обратно?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure .</p>
+         </div>
+         <div class="bgrid">
+           <h3>Можно ли поменять резину на двери?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</p>
+         </div>
+         <div class="bgrid">
+           <h3>Вытек "фреон". Можно ли его залить обратно?</h3>
+           <p>Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure .</p>
+         </div>
+       </div>
+     </div>
+   </section>
 
-
-   <!-- Footer
+   <!-- footer
    ================================================== -->
    <footer>
-
-      <div class="row">  
-
-      	<div class="twelve columns content group">
-   	     <hr />
-
-            <div class="info">
-
-            	<div class="footer-logo"></div>
-         </div>
-
-      	</div>           
-
-         <ul class="copyright">
-         	<li>&copy; yasyasub 2019.</li>
-		 </ul>
-
-         <div id="go-top">
-            <a class="smoothscroll" style="background-color: #fdc501; color: #0b0b0b;" title="Back to Top" href="#hero">на верх?<i class="fa fa-angle-up"></i></a>
-         </div>
-
-      </div> <!-- end row -->
-
-   </footer> <!-- end footer -->
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
+     <div class="footer-main">
+       <div class="row">
+         <div class="col-four tab-full mob-full footer-info">
+           <div class="footer-logo"></div>
+              <p>Ремонт холодильников в Харькове и <br>пригороде по доступным ценам с <br>гарантией качества</p>
+            </div>
+            <div class="col-four tab-1-3 mob-full site-links">
+	      		   <h4>Навигация</h4>
+               <ul>
+                 <li><a href="#intro">Главная</a></li>
+                 <li><a href="#process">Вызов мастера</a></li>
+                 <li><a href="#intro">Распространенные поломки</a></li>
+                 <li><a href="#features">Преимущества</a></li>
+                 <li><a href="#pricing">Расценки</a></li>
+                 <li><a href="#faq">ЧЗВ</a></li>
+				</ul>
+	      	</div>
+	      </div>
+      </div>
+      <div class="footer-bottom">
+      	<div class="row">
+      		<div class="col-twelve">
+	      		<div class="copyright">
+					    <span>
+                <strong>©Subbotin 2019</strong>
+              </span>
+		         </div>
+		         <div id="go-top" style="display: block;">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+		         </div>
+	      	</div>
+      	</div>
+      </div>
+   </footer>
 
    <!-- Java Script
-   ================================================== --> 
+   ================================================== -->
    <script src="js/jquery-1.11.3.min.js"></script>
    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="js/jquery.flexslider-min.js"></script>
-   <script src="js/jquery.waypoints.min.js"></script>
-   <script src="js/jquery.validate.min.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/jquery.placeholder.min.js"></script>
-   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
 
 </body>
-
 </html>
