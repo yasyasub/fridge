@@ -1025,9 +1025,10 @@ a.menu-toggle {
  *
  * -------------------------------------------------------------------
  */
-
+/* TODO: add box-shadow*/
 #intro {
 	background: #7d7d7d url(../images/intro-bg.jpg) no-repeat center;
+	z-index: 40;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1037,7 +1038,12 @@ a.menu-toggle {
 	min-height: 720px;
 	display: table;
 	position: relative;
+
+	@media (width <= 768px) {
+		color: red;
+	}
 }
+
 #breakdowns{
 	background: #EAEAED;
 }
@@ -1109,6 +1115,8 @@ a.menu-toggle {
 
 @media only screen and (max-width:1024px) {
 	#intro {
+		max-width: 100%;
+		height: auto;
 	}
 	.intro-content {
 		-webkit-transform: translateY(0);

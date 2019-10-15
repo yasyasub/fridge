@@ -19,6 +19,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GoldShinaService" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -60,6 +61,12 @@
       <workItem from="1569565008073" duration="5306000" />
       <workItem from="1569602441972" duration="4683000" />
       <workItem from="1569608412474" duration="5483000" />
+      <workItem from="1569854184203" duration="609000" />
+      <workItem from="1569926848047" duration="3129000" />
+      <workItem from="1570193302031" duration="2168000" />
+      <workItem from="1570284155044" duration="8000" />
+      <workItem from="1570702509804" duration="1165000" />
+      <workItem from="1570975885371" duration="1069000" />
     </task>
     <servers />
   </component>
