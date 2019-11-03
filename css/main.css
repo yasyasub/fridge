@@ -292,7 +292,7 @@ th:last-child, td:last-child {
 	-webkit-overflow-scrolling: touch;
 }
 button, .button {
-	margin-bottom: 1.2;
+	margin-bottom: 1.2em;
 }
 fieldset {
 	margin-bottom: 1.5rem;
