@@ -1677,7 +1677,7 @@ a.menu-toggle {
 }
 
 .features-content p {
-    color: rgba(0, 0, 0, 0.7);
+    color: black;
     font-size: x-large;
     font-weight: bold;
 }
