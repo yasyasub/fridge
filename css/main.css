@@ -1368,7 +1368,7 @@ a.menu-toggle {
 
 @media only screen and (max-width:400px) {
     #intro {
-        min-height: 550px;
+        min-height: 700px;
     }
     .intro-content h1 {
         font-size: 3.4rem;
